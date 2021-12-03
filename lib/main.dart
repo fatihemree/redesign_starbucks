@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import './init/extension/context_extension.dart';
+import 'package:redesign_starbucks/view/splash/splash.dart';
 import './init/theme/theme_colors.dart';
 
 void main() => runApp(MyApp());
@@ -10,6 +10,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Material App',
       theme: ThemeData(
+        scaffoldBackgroundColor: ThemeColors.background,
         fontFamily: 'Inter',
         colorScheme: ColorScheme(
           background: ThemeColors.background,
@@ -27,29 +28,15 @@ class MyApp extends StatelessWidget {
           brightness: Brightness.light,
         ),
         appBarTheme: AppBarTheme(backgroundColor: Colors.white),
-        textTheme: const TextTheme(
-          headline1: TextStyle(
-              fontSize: 72.0, color: Colors.blue, fontWeight: FontWeight.bold),
+        textTheme: TextTheme(
           headline6: TextStyle(
-              fontSize: 36.0, color: Colors.amber, fontStyle: FontStyle.italic),
-          bodyText2: TextStyle(fontSize: 14.0, fontFamily: 'Hind'),
+              fontSize: 30,
+              color: ThemeColors.dark,
+              fontWeight: FontWeight.bold),
+          bodyText1: TextStyle(fontSize: 14.0, color: ThemeColors.darkGrey),
         ),
       ),
-      home: Deneme(),
-    );
-  }
-}
-
-class Deneme extends StatelessWidget {
-  const Deneme({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(
-        // child: Text('HelloWord', style: Theme.of(context).textTheme.headline1),
-        child: Text('HelloWord', style: context.textTheme.headline1),
-      ),
+      home: Splash(),
     );
   }
 }
