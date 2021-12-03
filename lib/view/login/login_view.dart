@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './login_view_model.dart';
   
-class loginView extends loginViewModel {
+class LoginView extends LoginViewModel {
     
   @override
   Widget build(BuildContext context) {

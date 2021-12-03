@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import './order_view_model.dart';
+import './offer_view_model.dart';
   
-class orderView extends orderViewModel {
+class OfferView extends OfferViewModel {
     
   @override
   Widget build(BuildContext context) {

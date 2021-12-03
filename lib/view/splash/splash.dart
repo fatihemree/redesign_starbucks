@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import './splash_view.dart';
 
-class splash extends StatefulWidget {
+class Splash extends StatefulWidget {
   
   @override
-  splashView createState() => new splashView();
+  SplashView createState() => new SplashView();
 }
   

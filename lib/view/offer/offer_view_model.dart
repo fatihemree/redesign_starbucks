@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import './order.dart';
+import './offer.dart';
 
-abstract class orderViewModel extends State<order> {
+abstract class OfferViewModel extends State<Offer> {
   // Add your state and logic here
 }

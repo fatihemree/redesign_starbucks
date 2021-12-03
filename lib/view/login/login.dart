@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import './login_view.dart';
 
-class login extends StatefulWidget {
+class Login extends StatefulWidget {
   
   @override
-  loginView createState() => new loginView();
+  LoginView createState() => new LoginView();
 }
   

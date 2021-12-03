@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './detail_view_model.dart';
   
-class detailView extends detailViewModel {
+class DetailView extends DetailViewModel {
     
   @override
   Widget build(BuildContext context) {

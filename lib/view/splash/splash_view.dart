@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import './splash_view_model.dart';
   
-class splashView extends splashViewModel {
+class SplashView extends SplashViewModel {
     
   @override
   Widget build(BuildContext context) {

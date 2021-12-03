@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './splash.dart';
 
-abstract class splashViewModel extends State<splash> {
+abstract class SplashViewModel extends State<Splash> {
   // Add your state and logic here
 }

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import './home_view.dart';
 
-class home extends StatefulWidget {
+class Home extends StatefulWidget {
   
   @override
-  homeView createState() => new homeView();
+  HomeView createState() => new HomeView();
 }
   

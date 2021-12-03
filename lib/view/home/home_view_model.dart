@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import './home.dart';
 
-abstract class homeViewModel extends State<home> {
+abstract class HomeViewModel extends State<Home> {
   // Add your state and logic here
 }
