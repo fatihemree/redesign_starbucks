@@ -43,12 +43,14 @@ class LoginView extends LoginViewModel {
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
                     TextField(
+                      controller: emailController,
                       decoration: TextFieldStyle(context, 'Email'),
                     ),
                     Padding(
                       padding:
                           EdgeInsets.symmetric(vertical: context.width * 0.05),
                       child: TextField(
+                        controller: passController,
                         obscureText: true,
                         decoration: TextFieldStyle(context, 'Password'),
                       ),

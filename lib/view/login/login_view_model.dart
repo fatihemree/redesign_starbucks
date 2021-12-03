@@ -37,12 +37,14 @@ abstract class LoginViewModel extends State<Login> {
     try {
       changeLoading();
       SharedPreferences cache = await SharedPreferences.getInstance();
-      loginUser = await service.loginRequest('test@test.com', '123456');
+      loginUser =
+          await service.loginRequest(emailController.text, passController.text);
       await cache.setString('token', loginUser!.data!.token.toString());
       NavgiationRoute(context, BottomNavigation());
       changeLoading();
     } on ErrorResponseModel catch (e) {
       SnackBarShow(context, e.message.toString());
+      changeLoading();
     }
   }
 
