@@ -48,9 +48,9 @@ extension PaddingExtensionSymetric on BuildContext {
       EdgeInsets.symmetric(horizontal: highValue);
 }
 
-// extension PageExtension on BuildContext {
-//   Color get randomColor => Colors.primaries[Random().nextInt(17)];
-// }
+extension PageExtension on BuildContext {
+  Color get randomColor => Colors.primaries[Random().nextInt(17)];
+}
 
 // extension DurationExtension on BuildContext {
 //   Duration get lowDuration => Duration(milliseconds: 500);
