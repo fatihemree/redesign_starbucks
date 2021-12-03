@@ -49,6 +49,7 @@ class LoginView extends LoginViewModel {
                       padding:
                           EdgeInsets.symmetric(vertical: context.width * 0.05),
                       child: TextField(
+                        obscureText: true,
                         decoration: TextFieldStyle(context, 'Password'),
                       ),
                     ),
