@@ -18,30 +18,26 @@ class MyApp extends StatelessWidget {
 
   ThemeData customThemeData() {
     return ThemeData(
-      scaffoldBackgroundColor: ThemeColors.background,
-      fontFamily: 'Inter',
-      bottomAppBarTheme: BottomAppBarTheme(color: Colors.black, elevation: 5),
-      colorScheme: ColorScheme(
-        background: ThemeColors.background,
-        onBackground: ThemeColors.dark,
-        primary: ThemeColors.mainGreen,
-        primaryVariant: ThemeColors.darkGreen,
-        onPrimary: Colors.white,
-        surface: ThemeColors.white,
-        onSurface: ThemeColors.dark,
-        secondary: ThemeColors.grey,
-        secondaryVariant: ThemeColors.darkGrey,
-        error: ThemeColors.darkRed,
-        onSecondary: ThemeColors.white,
-        onError: ThemeColors.darkRed,
-        brightness: Brightness.light,
-      ),
-      appBarTheme: AppBarTheme(backgroundColor: Colors.white),
-      textTheme: TextTheme(
-        headline6: TextStyle(
-            fontSize: 30, color: ThemeColors.dark, fontWeight: FontWeight.bold),
-        bodyText1: TextStyle(fontSize: 14.0, color: ThemeColors.darkGrey),
-      ),
-    );
+        scaffoldBackgroundColor: ThemeColors.background,
+        fontFamily: 'Inter',
+        bottomAppBarTheme: BottomAppBarTheme(color: Colors.black, elevation: 5),
+        colorScheme: ColorScheme(
+          background: ThemeColors.background,
+          onBackground: ThemeColors.dark,
+          primary: ThemeColors.mainGreen,
+          primaryVariant: ThemeColors.darkGreen,
+          onPrimary: Colors.white,
+          surface: ThemeColors.white,
+          onSurface: ThemeColors.dark,
+          secondary: ThemeColors.grey,
+          secondaryVariant: ThemeColors.darkGrey,
+          error: ThemeColors.darkRed,
+          onSecondary: ThemeColors.white,
+          onError: ThemeColors.darkRed,
+          brightness: Brightness.light,
+        ),
+        appBarTheme: AppBarTheme(
+          backgroundColor: Colors.white,
+        ));
   }
 }
