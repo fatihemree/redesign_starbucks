@@ -3,6 +3,7 @@ import 'package:redesign_starbucks/constants/helpers/navigation_route.dart';
 import 'package:redesign_starbucks/models/error_response_model.dart';
 import 'package:redesign_starbucks/view/home/home.dart';
 import 'package:redesign_starbucks/view/login/service/login_service.dart';
+import 'package:redesign_starbucks/widgets/bottom_navigation.dart';
 import 'package:redesign_starbucks/widgets/show_dialog.dart';
 import 'package:redesign_starbucks/widgets/snack_bar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -38,7 +39,7 @@ abstract class LoginViewModel extends State<Login> {
       SharedPreferences cache = await SharedPreferences.getInstance();
       loginUser = await service.loginRequest('test@test.com', '123456');
       await cache.setString('token', loginUser!.data!.token.toString());
-      NavgiationRoute(context, Home());
+      NavgiationRoute(context, BottomNavigation());
       changeLoading();
     } on ErrorResponseModel catch (e) {
       SnackBarShow(context, e.message.toString());
