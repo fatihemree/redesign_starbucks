@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:redesign_starbucks/view/splash/splash.dart';
+import 'package:redesign_starbucks/widgets/bottom_navigation.dart';
 import './init/theme/theme_colors.dart';
 
 void main() => runApp(MyApp());
@@ -12,6 +13,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         scaffoldBackgroundColor: ThemeColors.background,
         fontFamily: 'Inter',
+        bottomAppBarTheme: BottomAppBarTheme(color: Colors.black, elevation: 5),
         colorScheme: ColorScheme(
           background: ThemeColors.background,
           onBackground: ThemeColors.dark,
@@ -36,7 +38,8 @@ class MyApp extends StatelessWidget {
           bodyText1: TextStyle(fontSize: 14.0, color: ThemeColors.darkGrey),
         ),
       ),
-      home: Splash(),
+      // home: Splash(),
+      home: BottomNavigation(),
     );
   }
 }
