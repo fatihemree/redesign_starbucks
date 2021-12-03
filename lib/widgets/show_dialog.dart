@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class ShowDialog {
   final String message;
   final BuildContext context;
-  ShowDialog(this.message, this.context) {
+  ShowDialog(this.context, this.message) {
     showDialog(
       context: context,
       builder: (context) => Dialog(

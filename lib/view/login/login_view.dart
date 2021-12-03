@@ -62,10 +62,14 @@ class LoginView extends LoginViewModel {
               ),
               Spacer(),
               SizedBox(
-                  width: context.width,
-                  height: context.height * 0.075,
-                  child: ElevatedButton(
-                      onPressed: () => {}, child: Text('Login'))),
+                width: context.width,
+                height: context.height * 0.075,
+                child: ElevatedButton(
+                    onPressed: () => {postRequest()},
+                    child: !isLoading
+                        ? Text('Login')
+                        : CircularProgressIndicator(color: Colors.white)),
+              ),
               Spacer(flex: 2)
             ],
           ),
