@@ -10,7 +10,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(fontFamily: 'Inter'),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Material App Bar'),
+          title: Text('Material App Bar',style: ,),
         ),
         body: Center(
           child: Container(
