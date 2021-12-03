@@ -234,7 +234,7 @@ packages:
     source: hosted
     version: "6.0.1"
   shared_preferences:
-    dependency: transitive
+    dependency: "direct main"
     description:
       name: shared_preferences
       url: "https://pub.dartlang.org"
@@ -247,13 +247,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.9"
-  shared_preferences_dtx:
-    dependency: "direct main"
-    description:
-      name: shared_preferences_dtx
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.0.2"
   shared_preferences_ios:
     dependency: transitive
     description:
