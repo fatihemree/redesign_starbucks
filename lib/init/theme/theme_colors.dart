@@ -19,5 +19,7 @@ class ThemeColors {
   static Color darkRed = const Color(0xff6B171F);
   static Color mainRed = const Color(0xffD62E3E);
   static Color softRed = const Color(0xffE26D78);
+  static Color softYellow = const Color(0xffE26D78);
   static Color lightRed = const Color(0xffF3C0C5);
+  static Color darkYellow = const Color(0xFFC1A063);
 }
